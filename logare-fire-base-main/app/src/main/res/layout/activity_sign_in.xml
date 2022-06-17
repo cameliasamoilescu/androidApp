@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_story">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="196dp"
+        android:layout_height="146dp"
+        android:fontFamily="@font/rubik_mono_one"
+        android:text="Welcome"
+        android:textSize="30sp"
+        android:textColor="@color/kinda_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="228dp"
+        android:text="Get me in!"
+        android:fontFamily="@font/rubik_mono_one"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.786" />
+
+    <EditText
+        android:id="@+id/passwordField"
+        android:layout_width="226dp"
+        android:layout_height="57dp"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:textColor="@color/kinda_black"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:fontFamily="@font/rubik_mono_one"
+
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintDimensionRatio="1:4"
+        app:layout_constraintEnd_toEndOf="@+id/guideline10"
+        app:layout_constraintHorizontal_bias="0.675"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nameField"
+        android:layout_width="226dp"
+        android:layout_height="57dp"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:fontFamily="@font/rubik_mono_one"
+        android:hint="Email"
+        android:textColor="@color/kinda_black"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/passwordField"
+        app:layout_constraintDimensionRatio="1:4"
+        app:layout_constraintEnd_toEndOf="@+id/guideline10"
+        app:layout_constraintHorizontal_bias="0.675"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.799" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.80" />
+</androidx.constraintlayout.widget.ConstraintLayout>
